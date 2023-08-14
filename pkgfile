@@ -1,0 +1,21 @@
+#! /bin/bash 
+
+PKG_name="gif.sh"
+
+declare -A PKG_distro_include
+
+PKG_distro_include["Debian"]="yes"
+PKG_distro_include["Arch"]="yes"
+PKG_distro_include["RedHat"]="yes"
+PKG_distro_include["openSUSE"]="yes"
+
+
+declare -a PKG_dependencies
+
+PKG_dependencies=(imagemagick)
+
+PKG_distro_package_name["Debian","imagemagick"]="imagemagick"
+PKG_distro_package_name["Arch","imagemagick"]="imagemagick"
+PKG_distro_package_name["RedHat","imagemagick"]="imagemagick"
+PKG_distro_package_name["openSUSE","imagemagick"]="imagemagick"
+

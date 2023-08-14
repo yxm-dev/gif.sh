@@ -1,0 +1,13 @@
+usage: gif [options] [arguments] (general case)
+       gif                       (use default options)
+
+options:
+    -fps, --frames-per-second         fix the screenshots rate
+    -q, --quality                     fix the quality of the .jpg files that build the .gif
+    -s, --stop                        stop the loop of screenshots
+    -c, --continue                    continue the loop, but in a new directory
+    -f, --finish                      conclude the process and build the .gif
+    -o, --optimize                    optimize the .gif file as possible, using gfsicle
+    -u, --upload                      upload the .gif file to imgur and return its url 
+    -h, --help                        display this help message
+        --uninstall                   execute the uninstall script
