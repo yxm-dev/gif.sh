@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# installing imgur.sh
+
+    if [[ -f "$pkgfile_dir/files/imgur" ]]; then
+        if [[ ! -f "/usr/bin/imgur" ]]
+            echo "Configuting the imgur.sh script..."
+            cp -r $pkgfile_dir/files/imgur /usr/bin/imgur
+        else
+            echo "error: There already exists the script \"/usr/bin/imgur.\""
+        fi
+    else
+        echo "error: imgur script not found."
+    fi
+

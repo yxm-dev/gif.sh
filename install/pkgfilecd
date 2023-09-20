@@ -1,0 +1,16 @@
+#! /bin/bash 
+
+echo "Checking for custom dependency gifsicle..."
+if [[ -x gifsicle ]]; then 
+    echo "ok..."
+else
+    echo echo "Installing custom dependency gifsicle..."
+fi
+
+git cloner https://github.com/kohler/gifsicle
+cd gifsicle
+./bootstrap.sh
+./configure
+make
+make install
+
